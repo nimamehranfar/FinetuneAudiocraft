@@ -1,0 +1,12 @@
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+*.wav
+*.mp3
+*.rar
+musicgen-env/
