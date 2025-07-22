@@ -9,6 +9,4 @@
 *.mp3
 *.rar
 musicgen-env/
-my_audio_lm/
 finetune_musicgen_outputs/
-my_finetune_model/
