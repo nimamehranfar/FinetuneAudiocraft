@@ -8,7 +8,11 @@ from audiocraft.data.audio import audio_write
 # Settings
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Using device:", device)
-model = MusicGen.get_pretrained("facebook/musicgen-large", device=device)
+
+# checkpoint_path = "checkpoint.th"
+# model = MusicGen.get_pretrained(checkpoint_path, device="cuda" or "cpu")
+
+model = MusicGen.get_pretrained("facebook/musicgen-small", device=device)
 model.set_generation_params(duration=8.0)
 
 # Config
@@ -18,7 +22,7 @@ trim_end = 5.0
 maximum_size = 12.0
 min_required_length = 10.0  # seconds — below this we skip trimming
 
-os.makedirs("musicgen_continuation_outputs", exist_ok=True)
+os.makedirs("../musicgen_continuation_outputs", exist_ok=True)
 
 sound_files = ["musicgen_outputs/" + fn for fn in os.listdir("musicgen_outputs") if fn.endswith(".wav")]
 

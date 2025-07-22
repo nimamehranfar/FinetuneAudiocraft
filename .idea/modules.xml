@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Music_Gen_Remix.iml" filepath="$PROJECT_DIR$/Music_Gen_Remix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinetuneAudiocraft.iml" filepath="$PROJECT_DIR$/FinetuneAudiocraft.iml" />
     </modules>
   </component>
 </project>

@@ -67,3 +67,35 @@ with open(manifest_path, "w", newline='', encoding="utf-8") as f:
             print(f"Skipped {fname}: {e}")
 
 print(f"Rebuilt manifest with {len(generated_files)} entries at {manifest_path}.")
+
+
+def tags_to_natural(tags):
+    tag_list = [t.replace('_', ' ').strip() for t in tags.split(',') if t.strip()]
+    if not tag_list:
+        return ""
+    if len(tag_list) == 1:
+        return tag_list[0]
+    return ", ".join(tag_list[:-1]) + " and " + tag_list[-1]
+
+in_path = "musicgen_outputs/manifest.tsv"  # or your manifest location
+out_path = "musicgen_outputs/musicgen_2x_manifest.csv"
+
+df = pd.read_csv(in_path, sep='\t')
+with open(out_path, "w", encoding="utf-8") as f:
+    f.write("text,audio\n")
+    for i, row in df.iterrows():
+        genre = row['description'].capitalize()
+        tags = row['labels']
+        tags_natural = tags_to_natural(tags)
+        # Row 1: Comma-separated
+        prompt_comma = f"{genre} {tags}"
+        audio_path = f"musicgen_outputs/{row['filename']}"
+        f.write(f"\"{prompt_comma}\",{audio_path}\n")
+        # Row 2: Natural language
+        if tags_natural:
+            prompt_nl = f"A {genre} track with sounds of {tags_natural}."
+        else:
+            prompt_nl = f"A {genre} track."
+        f.write(f"\"{prompt_nl}\",{audio_path}\n")
+
+print(f"New 2x manifest written to {out_path}. Rows: {df.shape[0]*2}")
