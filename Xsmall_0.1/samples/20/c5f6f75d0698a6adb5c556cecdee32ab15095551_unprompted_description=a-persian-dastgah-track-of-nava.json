@@ -1,0 +1,23 @@
+{
+  "id": "c5f6f75d0698a6adb5c556cecdee32ab15095551_unprompted_description=a-persian-dastgah-track-of-nava",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\20\\c5f6f75d0698a6adb5c556cecdee32ab15095551_unprompted_description=a-persian-dastgah-track-of-nava.wav",
+  "epoch": 20,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Nava"
+  },
+  "prompt": null,
+  "reference": {
+    "id": "e2033683fee19b6e95da072d22c32fb99cbdff9f",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\e2033683fee19b6e95da072d22c32fb99cbdff9f.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}

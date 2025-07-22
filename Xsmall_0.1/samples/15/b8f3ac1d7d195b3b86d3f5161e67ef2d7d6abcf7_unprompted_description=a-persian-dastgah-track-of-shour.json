@@ -1,0 +1,23 @@
+{
+  "id": "b8f3ac1d7d195b3b86d3f5161e67ef2d7d6abcf7_unprompted_description=a-persian-dastgah-track-of-shour",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\15\\b8f3ac1d7d195b3b86d3f5161e67ef2d7d6abcf7_unprompted_description=a-persian-dastgah-track-of-shour.wav",
+  "epoch": 15,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Shour"
+  },
+  "prompt": null,
+  "reference": {
+    "id": "1ce55712920e8a53f7ae0962a94dccd92119988b",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\1ce55712920e8a53f7ae0962a94dccd92119988b.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}

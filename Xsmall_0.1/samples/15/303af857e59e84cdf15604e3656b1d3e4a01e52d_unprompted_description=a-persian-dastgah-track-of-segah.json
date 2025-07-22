@@ -1,0 +1,23 @@
+{
+  "id": "303af857e59e84cdf15604e3656b1d3e4a01e52d_unprompted_description=a-persian-dastgah-track-of-segah",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\15\\303af857e59e84cdf15604e3656b1d3e4a01e52d_unprompted_description=a-persian-dastgah-track-of-segah.wav",
+  "epoch": 15,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Segah"
+  },
+  "prompt": null,
+  "reference": {
+    "id": "9298f453f67f9db975adc1733cdc49a03ba526ca",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\9298f453f67f9db975adc1733cdc49a03ba526ca.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}

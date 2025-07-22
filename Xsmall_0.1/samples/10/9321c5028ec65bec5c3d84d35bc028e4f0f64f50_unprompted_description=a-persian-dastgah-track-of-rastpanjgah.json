@@ -1,0 +1,23 @@
+{
+  "id": "9321c5028ec65bec5c3d84d35bc028e4f0f64f50_unprompted_description=a-persian-dastgah-track-of-rastpanjgah",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\10\\9321c5028ec65bec5c3d84d35bc028e4f0f64f50_unprompted_description=a-persian-dastgah-track-of-rastpanjgah.wav",
+  "epoch": 10,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Rastpanjgah"
+  },
+  "prompt": null,
+  "reference": {
+    "id": "7e766b82b121e451f7e5ff52dc91acc6d93adbf7",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\7e766b82b121e451f7e5ff52dc91acc6d93adbf7.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}

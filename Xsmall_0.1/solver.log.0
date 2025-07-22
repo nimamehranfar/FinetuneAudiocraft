@@ -1,0 +1,578 @@
+[[36m07-20 15:47:04[0m][[34mdora.distrib[0m][[32mINFO[0m] - world_size is 1, skipping init.[0m
+[[36m07-20 15:47:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Instantiating solver MusicGenSolver for XP 020819d8[0m
+[[36m07-20 15:47:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - All XP logs are stored in C:\tmp\audiocraft_mehra\xps\020819d8[0m
+[[36m07-20 15:47:04[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split train: C:\Users\mehra\IdeaProjects\audiocraft\TrimmedPersianMusic\manifest_finetune_train.jsonl[0m
+[[36m07-20 15:47:04[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split valid: C:\Users\mehra\IdeaProjects\audiocraft\TrimmedPersianMusic\manifest_finetune_valid.jsonl[0m
+[[36m07-20 15:47:04[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split evaluate: C:\Users\mehra\IdeaProjects\audiocraft\TrimmedPersianMusic\manifest_finetune_test.jsonl[0m
+[[36m07-20 15:47:04[0m][[34maudiocraft.solvers.builders[0m][[32mINFO[0m] - Loading audio data split generate: C:\Users\mehra\IdeaProjects\audiocraft\TrimmedPersianMusic\manifest_finetune_test.jsonl[0m
+[[36m07-20 15:47:04[0m][[34mroot[0m][[32mINFO[0m] - Getting pretrained compression model from HF facebook/encodec_32khz[0m
+[[36m07-20 15:47:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Compression model has 4 codebooks with 2048 cardinality, and a framerate of 50[0m
+[[36m07-20 15:47:05[0m][[34maudiocraft.modules.conditioners[0m][[32mINFO[0m] - T5 will be evaluated with autocast as float32[0m
+[[36m07-20 15:47:07[0m][[34maudiocraft.optim.dadam[0m][[32mINFO[0m] - Using decoupled weight decay[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0ce07e20d0c8c479f2ef6a2d4a8fcc9a55e1cdd3[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Initializing EMA on the model with decay = 0.99 every 10 updates[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model size: 1.23 M params[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Base memory usage, with model, grad and optim: 0.02 GB[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Restoring weights and history.[0m
+[[36m07-20 15:47:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 0ce07e20d0c8c479f2ef6a2d4a8fcc9a55e1cdd3[0m
+[[36m07-20 15:48:02[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 400, sequence steps: 404[0m
+[[36m07-20 15:50:56[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 1 | lr=2.59E-02 | grad_norm=8.490E-01 | grad_scale=65536.000 | ce=8.114 | ppl=3340.041 | duration=229.121[0m
+[[36m07-20 15:51:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 1/14 | 0.20 it/sec | ce 8.116 | ppl 3347.973[0m
+[[36m07-20 15:51:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 2/14 | 0.28 it/sec | ce 8.097 | ppl 3284.183[0m
+[[36m07-20 15:51:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 3/14 | 0.36 it/sec | ce 8.116 | ppl 3346.991[0m
+[[36m07-20 15:51:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 4/14 | 0.43 it/sec | ce 8.096 | ppl 3282.242[0m
+[[36m07-20 15:51:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 5/14 | 0.49 it/sec | ce 8.117 | ppl 3349.709[0m
+[[36m07-20 15:51:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 6/14 | 0.55 it/sec | ce 8.119 | ppl 3358.960[0m
+[[36m07-20 15:51:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 7/14 | 0.61 it/sec | ce 8.103 | ppl 3305.749[0m
+[[36m07-20 15:51:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 8/14 | 0.66 it/sec | ce 8.125 | ppl 3376.673[0m
+[[36m07-20 15:51:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 9/14 | 0.71 it/sec | ce 8.105 | ppl 3309.856[0m
+[[36m07-20 15:51:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 10/14 | 0.75 it/sec | ce 8.128 | ppl 3386.671[0m
+[[36m07-20 15:51:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 11/14 | 0.80 it/sec | ce 8.111 | ppl 3331.117[0m
+[[36m07-20 15:51:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 12/14 | 0.84 it/sec | ce 8.124 | ppl 3374.011[0m
+[[36m07-20 15:51:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 13/14 | 0.88 it/sec | ce 8.124 | ppl 3373.068[0m
+[[36m07-20 15:51:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 1 | ce=8.114 | ppl=3341.084 | duration=17.962[0m
+[[36m07-20 15:51:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=8.114 (was inf)[0m
+[[36m07-20 15:51:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f30422805322c9367492ef3097cad1754ca21193[0m
+[[36m07-20 15:51:14[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 15:55:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 2 | lr=7.78E-02 | grad_norm=8.611E-01 | grad_scale=65536.000 | ce=8.110 | ppl=3327.071 | duration=228.379[0m
+[[36m07-20 15:55:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 1/14 | 0.19 it/sec | ce 8.113 | ppl 3338.788[0m
+[[36m07-20 15:55:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 2/14 | 0.28 it/sec | ce 8.093 | ppl 3269.982[0m
+[[36m07-20 15:55:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 3/14 | 0.35 it/sec | ce 8.113 | ppl 3336.013[0m
+[[36m07-20 15:55:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 4/14 | 0.42 it/sec | ce 8.093 | ppl 3270.331[0m
+[[36m07-20 15:55:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 5/14 | 0.49 it/sec | ce 8.114 | ppl 3339.686[0m
+[[36m07-20 15:55:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 6/14 | 0.55 it/sec | ce 8.116 | ppl 3348.575[0m
+[[36m07-20 15:55:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 7/14 | 0.60 it/sec | ce 8.101 | ppl 3296.833[0m
+[[36m07-20 15:55:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 8/14 | 0.65 it/sec | ce 8.120 | ppl 3362.620[0m
+[[36m07-20 15:55:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 9/14 | 0.70 it/sec | ce 8.102 | ppl 3300.240[0m
+[[36m07-20 15:55:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 10/14 | 0.75 it/sec | ce 8.125 | ppl 3376.197[0m
+[[36m07-20 15:55:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 11/14 | 0.79 it/sec | ce 8.108 | ppl 3320.137[0m
+[[36m07-20 15:55:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 12/14 | 0.83 it/sec | ce 8.120 | ppl 3362.146[0m
+[[36m07-20 15:55:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 2 | 13/14 | 0.87 it/sec | ce 8.120 | ppl 3362.251[0m
+[[36m07-20 15:55:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 2 | ce=8.111 | ppl=3330.185 | duration=18.111[0m
+[[36m07-20 15:55:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=8.111 (was 8.114)[0m
+[[36m07-20 15:55:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: aecaa50e1907de111450bf0198916b17c4db3a5c[0m
+[[36m07-20 15:55:21[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 15:59:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 3 | lr=9.99E-02 | grad_norm=5.540E-01 | grad_scale=65536.000 | ce=6.809 | ppl=1444.912 | duration=228.652[0m
+[[36m07-20 15:59:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 1/14 | 0.19 it/sec | ce 7.433 | ppl 1691.407[0m
+[[36m07-20 15:59:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 2/14 | 0.27 it/sec | ce 7.181 | ppl 1313.948[0m
+[[36m07-20 15:59:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 3/14 | 0.35 it/sec | ce 7.363 | ppl 1577.030[0m
+[[36m07-20 15:59:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 4/14 | 0.41 it/sec | ce 7.285 | ppl 1458.301[0m
+[[36m07-20 15:59:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 5/14 | 0.48 it/sec | ce 7.396 | ppl 1629.171[0m
+[[36m07-20 15:59:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 6/14 | 0.54 it/sec | ce 7.387 | ppl 1614.622[0m
+[[36m07-20 15:59:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 7/14 | 0.59 it/sec | ce 7.427 | ppl 1680.361[0m
+[[36m07-20 15:59:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 8/14 | 0.64 it/sec | ce 7.248 | ppl 1405.092[0m
+[[36m07-20 15:59:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 9/14 | 0.69 it/sec | ce 7.404 | ppl 1642.775[0m
+[[36m07-20 15:59:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 10/14 | 0.73 it/sec | ce 7.400 | ppl 1636.629[0m
+[[36m07-20 15:59:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 11/14 | 0.78 it/sec | ce 7.355 | ppl 1563.617[0m
+[[36m07-20 15:59:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 12/14 | 0.81 it/sec | ce 7.332 | ppl 1528.843[0m
+[[36m07-20 15:59:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 3 | 13/14 | 0.86 it/sec | ce 7.374 | ppl 1593.330[0m
+[[36m07-20 15:59:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 3 | ce=7.358 | ppl=1573.324 | duration=18.370[0m
+[[36m07-20 15:59:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=7.358 (was 8.111)[0m
+[[36m07-20 15:59:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: b2e3151a9998dd92a60f3bf7999896e37d48f0cd[0m
+[[36m07-20 15:59:28[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:03:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 4 | lr=9.93E-02 | grad_norm=2.944E-01 | grad_scale=65536.000 | ce=4.845 | ppl=131.939 | duration=225.908[0m
+[[36m07-20 16:03:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 1/14 | 0.19 it/sec | ce 6.090 | ppl 441.396[0m
+[[36m07-20 16:03:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 2/14 | 0.28 it/sec | ce 5.561 | ppl 260.175[0m
+[[36m07-20 16:03:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 3/14 | 0.35 it/sec | ce 5.949 | ppl 383.358[0m
+[[36m07-20 16:03:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 4/14 | 0.42 it/sec | ce 5.792 | ppl 327.521[0m
+[[36m07-20 16:03:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 5/14 | 0.49 it/sec | ce 6.010 | ppl 407.323[0m
+[[36m07-20 16:03:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 6/14 | 0.55 it/sec | ce 5.993 | ppl 400.443[0m
+[[36m07-20 16:03:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 7/14 | 0.60 it/sec | ce 6.087 | ppl 440.221[0m
+[[36m07-20 16:03:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 8/14 | 0.66 it/sec | ce 5.727 | ppl 307.026[0m
+[[36m07-20 16:03:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 9/14 | 0.70 it/sec | ce 6.038 | ppl 419.077[0m
+[[36m07-20 16:03:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 10/14 | 0.75 it/sec | ce 6.027 | ppl 414.364[0m
+[[36m07-20 16:03:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 11/14 | 0.79 it/sec | ce 5.945 | ppl 381.892[0m
+[[36m07-20 16:03:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 12/14 | 0.83 it/sec | ce 5.868 | ppl 353.680[0m
+[[36m07-20 16:03:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 4 | 13/14 | 0.87 it/sec | ce 5.941 | ppl 380.148[0m
+[[36m07-20 16:03:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 4 | ce=5.937 | ppl=382.716 | duration=18.020[0m
+[[36m07-20 16:03:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=5.937 (was 7.358)[0m
+[[36m07-20 16:03:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 67a0deda659fc983a199e18ff64cb7a873650471[0m
+[[36m07-20 16:03:32[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:07:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 5 | lr=9.82E-02 | grad_norm=3.844E-01 | grad_scale=65536.000 | ce=4.255 | ppl=72.056 | duration=232.412[0m
+[[36m07-20 16:07:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 1/14 | 0.18 it/sec | ce 5.536 | ppl 253.864[0m
+[[36m07-20 16:07:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 2/14 | 0.26 it/sec | ce 4.855 | ppl 128.387[0m
+[[36m07-20 16:07:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 3/14 | 0.33 it/sec | ce 5.367 | ppl 214.152[0m
+[[36m07-20 16:07:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 4/14 | 0.40 it/sec | ce 5.141 | ppl 170.968[0m
+[[36m07-20 16:07:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 5/14 | 0.46 it/sec | ce 5.434 | ppl 229.010[0m
+[[36m07-20 16:07:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 6/14 | 0.52 it/sec | ce 5.411 | ppl 223.931[0m
+[[36m07-20 16:07:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 7/14 | 0.57 it/sec | ce 5.523 | ppl 250.268[0m
+[[36m07-20 16:07:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 8/14 | 0.62 it/sec | ce 5.090 | ppl 162.444[0m
+[[36m07-20 16:07:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 9/14 | 0.67 it/sec | ce 5.486 | ppl 241.195[0m
+[[36m07-20 16:07:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 10/14 | 0.71 it/sec | ce 5.451 | ppl 232.939[0m
+[[36m07-20 16:07:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 11/14 | 0.75 it/sec | ce 5.375 | ppl 215.876[0m
+[[36m07-20 16:07:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 12/14 | 0.79 it/sec | ce 5.247 | ppl 190.059[0m
+[[36m07-20 16:07:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 5 | 13/14 | 0.83 it/sec | ce 5.351 | ppl 210.720[0m
+[[36m07-20 16:07:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 5 | ce=5.343 | ppl=212.691 | duration=18.967[0m
+[[36m07-20 16:07:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=5.343 (was 5.937)[0m
+[[36m07-20 16:07:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 16:07:53[0m][[34maudiocraft.modules.codebooks_patterns[0m][[32mINFO[0m] - New pattern, time steps: 500, sequence steps: 504[0m
+[[36m07-20 16:08:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 5 | rtf=0.342 | duration=20.079[0m
+[[36m07-20 16:08:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7efe92a08f211346947d57fc354672f8a84216e6[0m
+[[36m07-20 16:08:04[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_5.th[0m
+[[36m07-20 16:08:04[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:12:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 6 | lr=9.65E-02 | grad_norm=4.235E-01 | grad_scale=65536.000 | ce=4.033 | ppl=57.287 | duration=251.752[0m
+[[36m07-20 16:12:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 1/14 | 0.18 it/sec | ce 5.204 | ppl 182.339[0m
+[[36m07-20 16:12:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 2/14 | 0.25 it/sec | ce 4.482 | ppl 88.444[0m
+[[36m07-20 16:12:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 3/14 | 0.32 it/sec | ce 5.008 | ppl 149.616[0m
+[[36m07-20 16:12:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 4/14 | 0.39 it/sec | ce 4.768 | ppl 117.738[0m
+[[36m07-20 16:12:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 5/14 | 0.45 it/sec | ce 5.090 | ppl 162.365[0m
+[[36m07-20 16:12:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 6/14 | 0.50 it/sec | ce 5.051 | ppl 156.224[0m
+[[36m07-20 16:12:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 7/14 | 0.56 it/sec | ce 5.166 | ppl 175.211[0m
+[[36m07-20 16:12:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 8/14 | 0.61 it/sec | ce 4.740 | ppl 114.457[0m
+[[36m07-20 16:12:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 9/14 | 0.65 it/sec | ce 5.171 | ppl 176.100[0m
+[[36m07-20 16:12:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 10/14 | 0.69 it/sec | ce 5.109 | ppl 165.471[0m
+[[36m07-20 16:12:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 11/14 | 0.73 it/sec | ce 5.025 | ppl 152.235[0m
+[[36m07-20 16:12:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 12/14 | 0.77 it/sec | ce 4.904 | ppl 134.828[0m
+[[36m07-20 16:12:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 6 | 13/14 | 0.82 it/sec | ce 5.003 | ppl 148.803[0m
+[[36m07-20 16:12:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 6 | ce=4.995 | ppl=150.441 | duration=19.345[0m
+[[36m07-20 16:12:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=4.995 (was 5.343)[0m
+[[36m07-20 16:12:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: c953674ae9d289974073a84eb9bc27ac26bc6803[0m
+[[36m07-20 16:12:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:16:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 7 | lr=9.43E-02 | grad_norm=4.478E-01 | grad_scale=65536.000 | ce=3.922 | ppl=51.168 | duration=250.686[0m
+[[36m07-20 16:16:57[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 1/14 | 0.18 it/sec | ce 4.894 | ppl 133.845[0m
+[[36m07-20 16:16:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 2/14 | 0.26 it/sec | ce 4.181 | ppl 65.440[0m
+[[36m07-20 16:16:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 3/14 | 0.33 it/sec | ce 4.681 | ppl 107.875[0m
+[[36m07-20 16:16:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 4/14 | 0.40 it/sec | ce 4.456 | ppl 86.111[0m
+[[36m07-20 16:16:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 5/14 | 0.46 it/sec | ce 4.775 | ppl 118.538[0m
+[[36m07-20 16:17:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 6/14 | 0.52 it/sec | ce 4.715 | ppl 111.610[0m
+[[36m07-20 16:17:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 7/14 | 0.57 it/sec | ce 4.821 | ppl 124.151[0m
+[[36m07-20 16:17:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 8/14 | 0.62 it/sec | ce 4.435 | ppl 84.346[0m
+[[36m07-20 16:17:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 9/14 | 0.67 it/sec | ce 4.873 | ppl 130.707[0m
+[[36m07-20 16:17:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 10/14 | 0.71 it/sec | ce 4.799 | ppl 121.402[0m
+[[36m07-20 16:17:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 11/14 | 0.75 it/sec | ce 4.700 | ppl 109.970[0m
+[[36m07-20 16:17:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 12/14 | 0.79 it/sec | ce 4.595 | ppl 99.029[0m
+[[36m07-20 16:17:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 7 | 13/14 | 0.84 it/sec | ce 4.672 | ppl 106.921[0m
+[[36m07-20 16:17:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 7 | ce=4.678 | ppl=109.556 | duration=18.867[0m
+[[36m07-20 16:17:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=4.678 (was 4.995)[0m
+[[36m07-20 16:17:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1f59d03e227840cf14cae81994ab997dde2f6685[0m
+[[36m07-20 16:17:04[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:21:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 8 | lr=9.17E-02 | grad_norm=4.515E-01 | grad_scale=85952.985 | ce=3.856 | ppl=47.890 | duration=251.892[0m
+[[36m07-20 16:21:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 1/14 | 0.18 it/sec | ce 4.628 | ppl 102.540[0m
+[[36m07-20 16:21:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 2/14 | 0.26 it/sec | ce 3.930 | ppl 50.914[0m
+[[36m07-20 16:21:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 3/14 | 0.33 it/sec | ce 4.409 | ppl 82.172[0m
+[[36m07-20 16:21:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 4/14 | 0.40 it/sec | ce 4.201 | ppl 66.765[0m
+[[36m07-20 16:21:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 5/14 | 0.46 it/sec | ce 4.510 | ppl 90.925[0m
+[[36m07-20 16:21:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 6/14 | 0.52 it/sec | ce 4.435 | ppl 84.367[0m
+[[36m07-20 16:21:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 7/14 | 0.57 it/sec | ce 4.530 | ppl 92.729[0m
+[[36m07-20 16:21:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 8/14 | 0.62 it/sec | ce 4.182 | ppl 65.494[0m
+[[36m07-20 16:21:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 9/14 | 0.67 it/sec | ce 4.609 | ppl 100.354[0m
+[[36m07-20 16:21:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 10/14 | 0.71 it/sec | ce 4.533 | ppl 93.064[0m
+[[36m07-20 16:21:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 11/14 | 0.75 it/sec | ce 4.425 | ppl 83.483[0m
+[[36m07-20 16:21:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 12/14 | 0.79 it/sec | ce 4.324 | ppl 75.491[0m
+[[36m07-20 16:21:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 8 | 13/14 | 0.83 it/sec | ce 4.385 | ppl 80.237[0m
+[[36m07-20 16:21:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 8 | ce=4.409 | ppl=83.648 | duration=19.047[0m
+[[36m07-20 16:21:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=4.409 (was 4.678)[0m
+[[36m07-20 16:21:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6ce5d4eb0f58a9db9943f78104d8f2907d31bd9e[0m
+[[36m07-20 16:21:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:25:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 9 | lr=8.86E-02 | grad_norm=4.614E-01 | grad_scale=131072.000 | ce=3.787 | ppl=44.713 | duration=254.437[0m
+[[36m07-20 16:26:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 1/14 | 0.18 it/sec | ce 4.426 | ppl 83.856[0m
+[[36m07-20 16:26:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 2/14 | 0.26 it/sec | ce 3.743 | ppl 42.226[0m
+[[36m07-20 16:26:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 3/14 | 0.33 it/sec | ce 4.208 | ppl 67.229[0m
+[[36m07-20 16:26:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 4/14 | 0.40 it/sec | ce 4.016 | ppl 55.483[0m
+[[36m07-20 16:26:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 5/14 | 0.46 it/sec | ce 4.312 | ppl 74.575[0m
+[[36m07-20 16:26:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 6/14 | 0.52 it/sec | ce 4.231 | ppl 68.803[0m
+[[36m07-20 16:26:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 7/14 | 0.57 it/sec | ce 4.318 | ppl 75.004[0m
+[[36m07-20 16:26:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 8/14 | 0.62 it/sec | ce 3.997 | ppl 54.435[0m
+[[36m07-20 16:26:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 9/14 | 0.67 it/sec | ce 4.409 | ppl 82.183[0m
+[[36m07-20 16:26:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 10/14 | 0.71 it/sec | ce 4.333 | ppl 76.175[0m
+[[36m07-20 16:26:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 11/14 | 0.75 it/sec | ce 4.218 | ppl 67.928[0m
+[[36m07-20 16:26:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 12/14 | 0.79 it/sec | ce 4.119 | ppl 61.523[0m
+[[36m07-20 16:26:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 9 | 13/14 | 0.83 it/sec | ce 4.169 | ppl 64.661[0m
+[[36m07-20 16:26:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 9 | ce=4.209 | ppl=68.424 | duration=18.969[0m
+[[36m07-20 16:26:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=4.209 (was 4.409)[0m
+[[36m07-20 16:26:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 647695966994f207f02f05121141f5574f3ede1b[0m
+[[36m07-20 16:26:09[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:30:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 10 | lr=8.50E-02 | grad_norm=4.710E-01 | grad_scale=131072.000 | ce=3.763 | ppl=43.567 | duration=253.213[0m
+[[36m07-20 16:30:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 1/14 | 0.17 it/sec | ce 4.283 | ppl 72.658[0m
+[[36m07-20 16:30:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 2/14 | 0.25 it/sec | ce 3.613 | ppl 37.078[0m
+[[36m07-20 16:30:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 3/14 | 0.32 it/sec | ce 4.066 | ppl 58.346[0m
+[[36m07-20 16:30:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 4/14 | 0.38 it/sec | ce 3.887 | ppl 48.772[0m
+[[36m07-20 16:30:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 5/14 | 0.44 it/sec | ce 4.173 | ppl 64.906[0m
+[[36m07-20 16:30:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 6/14 | 0.50 it/sec | ce 4.091 | ppl 59.774[0m
+[[36m07-20 16:30:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 7/14 | 0.55 it/sec | ce 4.171 | ppl 64.797[0m
+[[36m07-20 16:30:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 8/14 | 0.60 it/sec | ce 3.869 | ppl 47.917[0m
+[[36m07-20 16:30:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 9/14 | 0.64 it/sec | ce 4.268 | ppl 71.395[0m
+[[36m07-20 16:30:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 10/14 | 0.69 it/sec | ce 4.191 | ppl 66.116[0m
+[[36m07-20 16:30:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 11/14 | 0.73 it/sec | ce 4.073 | ppl 58.747[0m
+[[36m07-20 16:30:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 12/14 | 0.76 it/sec | ce 3.976 | ppl 53.286[0m
+[[36m07-20 16:30:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 10 | 13/14 | 0.81 it/sec | ce 4.018 | ppl 55.602[0m
+[[36m07-20 16:30:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 10 | ce=4.069 | ppl=59.432 | duration=19.662[0m
+[[36m07-20 16:30:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=4.069 (was 4.209)[0m
+[[36m07-20 16:30:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 16:31:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 10 | rtf=0.300 | duration=18.936[0m
+[[36m07-20 16:31:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 29ec3fda7d01e9c955dd4884ce2595d34cd6c73f[0m
+[[36m07-20 16:31:01[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_10.th[0m
+[[36m07-20 16:31:01[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:35:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 11 | lr=8.11E-02 | grad_norm=4.739E-01 | grad_scale=131072.000 | ce=3.743 | ppl=42.654 | duration=251.010[0m
+[[36m07-20 16:35:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 1/14 | 0.19 it/sec | ce 4.181 | ppl 65.616[0m
+[[36m07-20 16:35:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 2/14 | 0.28 it/sec | ce 3.523 | ppl 33.885[0m
+[[36m07-20 16:35:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 3/14 | 0.35 it/sec | ce 3.966 | ppl 52.787[0m
+[[36m07-20 16:35:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 4/14 | 0.42 it/sec | ce 3.797 | ppl 44.553[0m
+[[36m07-20 16:35:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 5/14 | 0.49 it/sec | ce 4.074 | ppl 58.811[0m
+[[36m07-20 16:35:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 6/14 | 0.55 it/sec | ce 3.992 | ppl 54.180[0m
+[[36m07-20 16:35:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 7/14 | 0.60 it/sec | ce 4.070 | ppl 58.540[0m
+[[36m07-20 16:35:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 8/14 | 0.65 it/sec | ce 3.780 | ppl 43.805[0m
+[[36m07-20 16:35:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 9/14 | 0.70 it/sec | ce 4.169 | ppl 64.653[0m
+[[36m07-20 16:35:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 10/14 | 0.74 it/sec | ce 4.091 | ppl 59.807[0m
+[[36m07-20 16:35:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 11/14 | 0.79 it/sec | ce 3.971 | ppl 53.035[0m
+[[36m07-20 16:35:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 12/14 | 0.82 it/sec | ce 3.875 | ppl 48.185[0m
+[[36m07-20 16:35:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 11 | 13/14 | 0.87 it/sec | ce 3.912 | ppl 50.003[0m
+[[36m07-20 16:35:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 11 | ce=3.970 | ppl=53.820 | duration=18.138[0m
+[[36m07-20 16:35:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.970 (was 4.069)[0m
+[[36m07-20 16:35:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1f4c93a9471335f7e53a92a55ad6ea770bde3f59[0m
+[[36m07-20 16:35:30[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:39:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 12 | lr=7.68E-02 | grad_norm=4.769E-01 | grad_scale=131072.000 | ce=3.698 | ppl=40.851 | duration=231.031[0m
+[[36m07-20 16:39:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 1/14 | 0.20 it/sec | ce 4.107 | ppl 60.947[0m
+[[36m07-20 16:39:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 2/14 | 0.29 it/sec | ce 3.460 | ppl 31.811[0m
+[[36m07-20 16:39:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 3/14 | 0.37 it/sec | ce 3.893 | ppl 49.076[0m
+[[36m07-20 16:39:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 4/14 | 0.44 it/sec | ce 3.732 | ppl 41.745[0m
+[[36m07-20 16:39:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 5/14 | 0.51 it/sec | ce 4.002 | ppl 54.691[0m
+[[36m07-20 16:39:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 6/14 | 0.57 it/sec | ce 3.922 | ppl 50.517[0m
+[[36m07-20 16:39:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 7/14 | 0.63 it/sec | ce 3.997 | ppl 54.438[0m
+[[36m07-20 16:39:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 8/14 | 0.68 it/sec | ce 3.715 | ppl 41.077[0m
+[[36m07-20 16:39:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 9/14 | 0.73 it/sec | ce 4.098 | ppl 60.200[0m
+[[36m07-20 16:39:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 10/14 | 0.77 it/sec | ce 4.019 | ppl 55.629[0m
+[[36m07-20 16:39:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 11/14 | 0.82 it/sec | ce 3.897 | ppl 49.238[0m
+[[36m07-20 16:39:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 12/14 | 0.86 it/sec | ce 3.803 | ppl 44.839[0m
+[[36m07-20 16:39:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 12 | 13/14 | 0.90 it/sec | ce 3.835 | ppl 46.294[0m
+[[36m07-20 16:39:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 12 | ce=3.899 | ppl=50.103 | duration=17.562[0m
+[[36m07-20 16:39:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.899 (was 3.970)[0m
+[[36m07-20 16:39:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 9472f36e78c7cb48cae3f106c5035fa6dc475bcc[0m
+[[36m07-20 16:39:39[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:43:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 13 | lr=7.23E-02 | grad_norm=4.652E-01 | grad_scale=131072.000 | ce=3.675 | ppl=39.979 | duration=223.917[0m
+[[36m07-20 16:43:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 1/14 | 0.19 it/sec | ce 4.053 | ppl 57.720[0m
+[[36m07-20 16:43:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 2/14 | 0.27 it/sec | ce 3.414 | ppl 30.376[0m
+[[36m07-20 16:43:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 3/14 | 0.34 it/sec | ce 3.839 | ppl 46.475[0m
+[[36m07-20 16:43:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 4/14 | 0.41 it/sec | ce 3.684 | ppl 39.791[0m
+[[36m07-20 16:43:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 5/14 | 0.48 it/sec | ce 3.948 | ppl 51.815[0m
+[[36m07-20 16:43:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 6/14 | 0.54 it/sec | ce 3.870 | ppl 47.952[0m
+[[36m07-20 16:43:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 7/14 | 0.59 it/sec | ce 3.943 | ppl 51.563[0m
+[[36m07-20 16:43:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 8/14 | 0.64 it/sec | ce 3.668 | ppl 39.159[0m
+[[36m07-20 16:43:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 9/14 | 0.69 it/sec | ce 4.045 | ppl 57.096[0m
+[[36m07-20 16:43:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 10/14 | 0.73 it/sec | ce 3.966 | ppl 52.749[0m
+[[36m07-20 16:43:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 11/14 | 0.77 it/sec | ce 3.842 | ppl 46.612[0m
+[[36m07-20 16:43:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 12/14 | 0.81 it/sec | ce 3.750 | ppl 42.539[0m
+[[36m07-20 16:43:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 13 | 13/14 | 0.85 it/sec | ce 3.777 | ppl 43.678[0m
+[[36m07-20 16:43:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 13 | ce=3.846 | ppl=47.517 | duration=18.447[0m
+[[36m07-20 16:43:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.846 (was 3.899)[0m
+[[36m07-20 16:43:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 2e76b9c2f2aec54df99998fb06cb6249f77b1b51[0m
+[[36m07-20 16:43:41[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:47:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 14 | lr=6.74E-02 | grad_norm=4.750E-01 | grad_scale=131072.000 | ce=3.670 | ppl=39.713 | duration=225.599[0m
+[[36m07-20 16:47:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 1/14 | 0.18 it/sec | ce 4.011 | ppl 55.377[0m
+[[36m07-20 16:47:39[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 2/14 | 0.26 it/sec | ce 3.378 | ppl 29.320[0m
+[[36m07-20 16:47:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 3/14 | 0.33 it/sec | ce 3.797 | ppl 44.570[0m
+[[36m07-20 16:47:40[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 4/14 | 0.40 it/sec | ce 3.647 | ppl 38.377[0m
+[[36m07-20 16:47:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 5/14 | 0.46 it/sec | ce 3.905 | ppl 49.669[0m
+[[36m07-20 16:47:41[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 6/14 | 0.52 it/sec | ce 3.830 | ppl 46.082[0m
+[[36m07-20 16:47:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 7/14 | 0.57 it/sec | ce 3.901 | ppl 49.447[0m
+[[36m07-20 16:47:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 8/14 | 0.62 it/sec | ce 3.631 | ppl 37.741[0m
+[[36m07-20 16:47:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 9/14 | 0.67 it/sec | ce 4.004 | ppl 54.825[0m
+[[36m07-20 16:47:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 10/14 | 0.71 it/sec | ce 3.925 | ppl 50.658[0m
+[[36m07-20 16:47:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 11/14 | 0.75 it/sec | ce 3.800 | ppl 44.680[0m
+[[36m07-20 16:47:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 12/14 | 0.79 it/sec | ce 3.711 | ppl 40.879[0m
+[[36m07-20 16:47:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 14 | 13/14 | 0.83 it/sec | ce 3.732 | ppl 41.748[0m
+[[36m07-20 16:47:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 14 | ce=3.806 | ppl=45.625 | duration=18.881[0m
+[[36m07-20 16:47:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.806 (was 3.846)[0m
+[[36m07-20 16:47:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 081151d797af35b41d76d6d3031d0c63e5915f50[0m
+[[36m07-20 16:47:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:51:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 15 | lr=6.24E-02 | grad_norm=4.761E-01 | grad_scale=131072.000 | ce=3.649 | ppl=38.913 | duration=224.946[0m
+[[36m07-20 16:51:42[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 1/14 | 0.19 it/sec | ce 3.978 | ppl 53.591[0m
+[[36m07-20 16:51:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 2/14 | 0.27 it/sec | ce 3.351 | ppl 28.522[0m
+[[36m07-20 16:51:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 3/14 | 0.34 it/sec | ce 3.764 | ppl 43.118[0m
+[[36m07-20 16:51:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 4/14 | 0.41 it/sec | ce 3.619 | ppl 37.301[0m
+[[36m07-20 16:51:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 5/14 | 0.48 it/sec | ce 3.872 | ppl 48.024[0m
+[[36m07-20 16:51:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 6/14 | 0.54 it/sec | ce 3.799 | ppl 44.665[0m
+[[36m07-20 16:51:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 7/14 | 0.59 it/sec | ce 3.867 | ppl 47.808[0m
+[[36m07-20 16:51:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 8/14 | 0.64 it/sec | ce 3.601 | ppl 36.635[0m
+[[36m07-20 16:51:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 9/14 | 0.69 it/sec | ce 3.972 | ppl 53.096[0m
+[[36m07-20 16:51:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 10/14 | 0.73 it/sec | ce 3.893 | ppl 49.068[0m
+[[36m07-20 16:51:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 11/14 | 0.78 it/sec | ce 3.766 | ppl 43.209[0m
+[[36m07-20 16:51:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 12/14 | 0.82 it/sec | ce 3.679 | ppl 39.616[0m
+[[36m07-20 16:51:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 15 | 13/14 | 0.86 it/sec | ce 3.695 | ppl 40.251[0m
+[[36m07-20 16:51:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 15 | ce=3.774 | ppl=44.178 | duration=18.434[0m
+[[36m07-20 16:51:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.774 (was 3.806)[0m
+[[36m07-20 16:51:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 16:52:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 15 | rtf=0.256 | duration=17.298[0m
+[[36m07-20 16:52:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7e5867039b8d5574583f3713597fa3ded762509b[0m
+[[36m07-20 16:52:07[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_15.th[0m
+[[36m07-20 16:52:07[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:55:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 16 | lr=5.73E-02 | grad_norm=4.705E-01 | grad_scale=212235.815 | ce=3.649 | ppl=38.858 | duration=224.560[0m
+[[36m07-20 16:56:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 1/14 | 0.19 it/sec | ce 3.952 | ppl 52.187[0m
+[[36m07-20 16:56:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 2/14 | 0.27 it/sec | ce 3.329 | ppl 27.898[0m
+[[36m07-20 16:56:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 3/14 | 0.35 it/sec | ce 3.737 | ppl 41.965[0m
+[[36m07-20 16:56:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 4/14 | 0.42 it/sec | ce 3.596 | ppl 36.450[0m
+[[36m07-20 16:56:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 5/14 | 0.48 it/sec | ce 3.845 | ppl 46.741[0m
+[[36m07-20 16:56:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 6/14 | 0.54 it/sec | ce 3.774 | ppl 43.549[0m
+[[36m07-20 16:56:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 7/14 | 0.59 it/sec | ce 3.839 | ppl 46.484[0m
+[[36m07-20 16:56:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 8/14 | 0.64 it/sec | ce 3.576 | ppl 35.734[0m
+[[36m07-20 16:56:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 9/14 | 0.69 it/sec | ce 3.946 | ppl 51.731[0m
+[[36m07-20 16:56:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 10/14 | 0.74 it/sec | ce 3.868 | ppl 47.835[0m
+[[36m07-20 16:56:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 11/14 | 0.78 it/sec | ce 3.738 | ppl 42.029[0m
+[[36m07-20 16:56:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 12/14 | 0.82 it/sec | ce 3.654 | ppl 38.627[0m
+[[36m07-20 16:56:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 16 | 13/14 | 0.86 it/sec | ce 3.665 | ppl 39.074[0m
+[[36m07-20 16:56:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 16 | ce=3.748 | ppl=43.035 | duration=18.359[0m
+[[36m07-20 16:56:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.748 (was 3.774)[0m
+[[36m07-20 16:56:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 7a3d3f86739a488780e160eb20acfb735b5527a9[0m
+[[36m07-20 16:56:10[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 16:59:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 17 | lr=5.21E-02 | grad_norm=4.762E-01 | grad_scale=262144.000 | ce=3.632 | ppl=38.201 | duration=223.953[0m
+[[36m07-20 17:00:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 1/14 | 0.19 it/sec | ce 3.930 | ppl 51.069[0m
+[[36m07-20 17:00:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 2/14 | 0.27 it/sec | ce 3.311 | ppl 27.400[0m
+[[36m07-20 17:00:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 3/14 | 0.34 it/sec | ce 3.714 | ppl 41.037[0m
+[[36m07-20 17:00:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 4/14 | 0.41 it/sec | ce 3.577 | ppl 35.780[0m
+[[36m07-20 17:00:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 5/14 | 0.47 it/sec | ce 3.822 | ppl 45.718[0m
+[[36m07-20 17:00:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 6/14 | 0.53 it/sec | ce 3.753 | ppl 42.648[0m
+[[36m07-20 17:00:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 7/14 | 0.59 it/sec | ce 3.816 | ppl 45.408[0m
+[[36m07-20 17:00:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 8/14 | 0.64 it/sec | ce 3.556 | ppl 35.022[0m
+[[36m07-20 17:00:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 9/14 | 0.68 it/sec | ce 3.924 | ppl 50.623[0m
+[[36m07-20 17:00:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 10/14 | 0.73 it/sec | ce 3.847 | ppl 46.852[0m
+[[36m07-20 17:00:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 11/14 | 0.77 it/sec | ce 3.716 | ppl 41.086[0m
+[[36m07-20 17:00:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 12/14 | 0.81 it/sec | ce 3.633 | ppl 37.845[0m
+[[36m07-20 17:00:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 17 | 13/14 | 0.85 it/sec | ce 3.641 | ppl 38.145[0m
+[[36m07-20 17:00:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 17 | ce=3.727 | ppl=42.122 | duration=18.554[0m
+[[36m07-20 17:00:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.727 (was 3.748)[0m
+[[36m07-20 17:00:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 5ffe5e07d7732c49262c7591d30144d66243314f[0m
+[[36m07-20 17:00:12[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:03:58[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 18 | lr=4.68E-02 | grad_norm=4.677E-01 | grad_scale=262144.000 | ce=3.620 | ppl=37.778 | duration=225.669[0m
+[[36m07-20 17:04:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 1/14 | 0.18 it/sec | ce 3.912 | ppl 50.143[0m
+[[36m07-20 17:04:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 2/14 | 0.26 it/sec | ce 3.295 | ppl 26.987[0m
+[[36m07-20 17:04:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 3/14 | 0.33 it/sec | ce 3.696 | ppl 40.295[0m
+[[36m07-20 17:04:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 4/14 | 0.40 it/sec | ce 3.562 | ppl 35.222[0m
+[[36m07-20 17:04:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 5/14 | 0.46 it/sec | ce 3.804 | ppl 44.862[0m
+[[36m07-20 17:04:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 6/14 | 0.52 it/sec | ce 3.736 | ppl 41.930[0m
+[[36m07-20 17:04:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 7/14 | 0.57 it/sec | ce 3.796 | ppl 44.533[0m
+[[36m07-20 17:04:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 8/14 | 0.62 it/sec | ce 3.539 | ppl 34.427[0m
+[[36m07-20 17:04:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 9/14 | 0.67 it/sec | ce 3.906 | ppl 49.718[0m
+[[36m07-20 17:04:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 10/14 | 0.71 it/sec | ce 3.830 | ppl 46.067[0m
+[[36m07-20 17:04:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 11/14 | 0.75 it/sec | ce 3.696 | ppl 40.295[0m
+[[36m07-20 17:04:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 12/14 | 0.79 it/sec | ce 3.617 | ppl 37.211[0m
+[[36m07-20 17:04:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 18 | 13/14 | 0.83 it/sec | ce 3.622 | ppl 37.400[0m
+[[36m07-20 17:04:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 18 | ce=3.709 | ppl=41.374 | duration=18.806[0m
+[[36m07-20 17:04:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.709 (was 3.727)[0m
+[[36m07-20 17:04:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4428c56935040c15cca6c044fb9dedae53c0399b[0m
+[[36m07-20 17:04:17[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:08:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 19 | lr=4.16E-02 | grad_norm=4.663E-01 | grad_scale=262144.000 | ce=3.610 | ppl=37.437 | duration=227.854[0m
+[[36m07-20 17:08:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 1/14 | 0.18 it/sec | ce 3.896 | ppl 49.380[0m
+[[36m07-20 17:08:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 2/14 | 0.26 it/sec | ce 3.283 | ppl 26.646[0m
+[[36m07-20 17:08:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 3/14 | 0.33 it/sec | ce 3.680 | ppl 39.660[0m
+[[36m07-20 17:08:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 4/14 | 0.40 it/sec | ce 3.549 | ppl 34.773[0m
+[[36m07-20 17:08:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 5/14 | 0.46 it/sec | ce 3.788 | ppl 44.179[0m
+[[36m07-20 17:08:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 6/14 | 0.52 it/sec | ce 3.721 | ppl 41.326[0m
+[[36m07-20 17:08:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 7/14 | 0.57 it/sec | ce 3.780 | ppl 43.822[0m
+[[36m07-20 17:08:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 8/14 | 0.62 it/sec | ce 3.524 | ppl 33.935[0m
+[[36m07-20 17:08:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 9/14 | 0.67 it/sec | ce 3.891 | ppl 48.964[0m
+[[36m07-20 17:08:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 10/14 | 0.71 it/sec | ce 3.816 | ppl 45.412[0m
+[[36m07-20 17:08:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 11/14 | 0.75 it/sec | ce 3.680 | ppl 39.654[0m
+[[36m07-20 17:08:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 12/14 | 0.79 it/sec | ce 3.602 | ppl 36.684[0m
+[[36m07-20 17:08:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 19 | 13/14 | 0.84 it/sec | ce 3.605 | ppl 36.790[0m
+[[36m07-20 17:08:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 19 | ce=3.694 | ppl=40.757 | duration=18.798[0m
+[[36m07-20 17:08:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.694 (was 3.709)[0m
+[[36m07-20 17:08:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: a108191dc5c46b550e44df0648d391b19bf0ae00[0m
+[[36m07-20 17:08:24[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:12:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 20 | lr=3.65E-02 | grad_norm=4.615E-01 | grad_scale=262144.000 | ce=3.595 | ppl=36.845 | duration=226.741[0m
+[[36m07-20 17:12:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 1/14 | 0.19 it/sec | ce 3.883 | ppl 48.728[0m
+[[36m07-20 17:12:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 2/14 | 0.27 it/sec | ce 3.272 | ppl 26.358[0m
+[[36m07-20 17:12:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 3/14 | 0.34 it/sec | ce 3.667 | ppl 39.142[0m
+[[36m07-20 17:12:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 4/14 | 0.41 it/sec | ce 3.538 | ppl 34.399[0m
+[[36m07-20 17:12:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 5/14 | 0.47 it/sec | ce 3.775 | ppl 43.602[0m
+[[36m07-20 17:12:24[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 6/14 | 0.53 it/sec | ce 3.709 | ppl 40.822[0m
+[[36m07-20 17:12:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 7/14 | 0.59 it/sec | ce 3.766 | ppl 43.215[0m
+[[36m07-20 17:12:25[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 8/14 | 0.64 it/sec | ce 3.512 | ppl 33.521[0m
+[[36m07-20 17:12:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 9/14 | 0.68 it/sec | ce 3.878 | ppl 48.336[0m
+[[36m07-20 17:12:26[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 10/14 | 0.73 it/sec | ce 3.804 | ppl 44.864[0m
+[[36m07-20 17:12:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 11/14 | 0.77 it/sec | ce 3.667 | ppl 39.124[0m
+[[36m07-20 17:12:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 12/14 | 0.81 it/sec | ce 3.590 | ppl 36.235[0m
+[[36m07-20 17:12:27[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 20 | 13/14 | 0.85 it/sec | ce 3.591 | ppl 36.269[0m
+[[36m07-20 17:12:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 20 | ce=3.681 | ppl=40.239 | duration=18.493[0m
+[[36m07-20 17:12:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.681 (was 3.694)[0m
+[[36m07-20 17:12:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 17:12:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 20 | rtf=0.247 | duration=17.400[0m
+[[36m07-20 17:12:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 98352e2f9c6a171d0641c7603d6cdf405e73bbd0[0m
+[[36m07-20 17:12:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_20.th[0m
+[[36m07-20 17:12:46[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:16:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 21 | lr=3.16E-02 | grad_norm=4.684E-01 | grad_scale=262144.000 | ce=3.597 | ppl=36.813 | duration=229.714[0m
+[[36m07-20 17:16:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 1/14 | 0.18 it/sec | ce 3.872 | ppl 48.199[0m
+[[36m07-20 17:16:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 2/14 | 0.26 it/sec | ce 3.262 | ppl 26.112[0m
+[[36m07-20 17:16:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 3/14 | 0.33 it/sec | ce 3.656 | ppl 38.704[0m
+[[36m07-20 17:16:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 4/14 | 0.39 it/sec | ce 3.529 | ppl 34.088[0m
+[[36m07-20 17:16:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 5/14 | 0.45 it/sec | ce 3.764 | ppl 43.117[0m
+[[36m07-20 17:16:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 6/14 | 0.51 it/sec | ce 3.699 | ppl 40.399[0m
+[[36m07-20 17:16:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 7/14 | 0.56 it/sec | ce 3.754 | ppl 42.697[0m
+[[36m07-20 17:16:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 8/14 | 0.61 it/sec | ce 3.502 | ppl 33.176[0m
+[[36m07-20 17:16:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 9/14 | 0.66 it/sec | ce 3.867 | ppl 47.802[0m
+[[36m07-20 17:16:52[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 10/14 | 0.70 it/sec | ce 3.794 | ppl 44.420[0m
+[[36m07-20 17:16:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 11/14 | 0.74 it/sec | ce 3.655 | ppl 38.671[0m
+[[36m07-20 17:16:53[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 12/14 | 0.78 it/sec | ce 3.579 | ppl 35.852[0m
+[[36m07-20 17:16:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 21 | 13/14 | 0.82 it/sec | ce 3.579 | ppl 35.833[0m
+[[36m07-20 17:16:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 21 | ce=3.670 | ppl=39.805 | duration=19.316[0m
+[[36m07-20 17:16:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.670 (was 3.681)[0m
+[[36m07-20 17:16:55[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: c7f46d72f3190a99e142e1a2b6cbe5674395b3bb[0m
+[[36m07-20 17:16:55[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:20:54[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 22 | lr=2.68E-02 | grad_norm=4.511E-01 | grad_scale=262144.000 | ce=3.588 | ppl=36.537 | duration=238.117[0m
+[[36m07-20 17:21:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 1/14 | 0.19 it/sec | ce 3.863 | ppl 47.755[0m
+[[36m07-20 17:21:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 2/14 | 0.27 it/sec | ce 3.255 | ppl 25.912[0m
+[[36m07-20 17:21:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 3/14 | 0.34 it/sec | ce 3.647 | ppl 38.352[0m
+[[36m07-20 17:21:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 4/14 | 0.41 it/sec | ce 3.522 | ppl 33.837[0m
+[[36m07-20 17:21:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 5/14 | 0.47 it/sec | ce 3.754 | ppl 42.712[0m
+[[36m07-20 17:21:07[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 6/14 | 0.53 it/sec | ce 3.690 | ppl 40.048[0m
+[[36m07-20 17:21:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 7/14 | 0.58 it/sec | ce 3.744 | ppl 42.272[0m
+[[36m07-20 17:21:08[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 8/14 | 0.63 it/sec | ce 3.493 | ppl 32.878[0m
+[[36m07-20 17:21:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 9/14 | 0.68 it/sec | ce 3.858 | ppl 47.360[0m
+[[36m07-20 17:21:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 10/14 | 0.72 it/sec | ce 3.785 | ppl 44.046[0m
+[[36m07-20 17:21:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 11/14 | 0.77 it/sec | ce 3.645 | ppl 38.301[0m
+[[36m07-20 17:21:10[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 12/14 | 0.80 it/sec | ce 3.571 | ppl 35.535[0m
+[[36m07-20 17:21:11[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 22 | 13/14 | 0.85 it/sec | ce 3.569 | ppl 35.465[0m
+[[36m07-20 17:21:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 22 | ce=3.661 | ppl=39.445 | duration=18.648[0m
+[[36m07-20 17:21:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.661 (was 3.670)[0m
+[[36m07-20 17:21:12[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 4df4de17c62f21d24a3bcb72720b43cc826a4cef[0m
+[[36m07-20 17:21:12[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:25:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 23 | lr=2.23E-02 | grad_norm=4.526E-01 | grad_scale=262144.000 | ce=3.591 | ppl=36.675 | duration=232.102[0m
+[[36m07-20 17:25:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 1/14 | 0.18 it/sec | ce 3.855 | ppl 47.370[0m
+[[36m07-20 17:25:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 2/14 | 0.26 it/sec | ce 3.248 | ppl 25.739[0m
+[[36m07-20 17:25:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 3/14 | 0.34 it/sec | ce 3.639 | ppl 38.055[0m
+[[36m07-20 17:25:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 4/14 | 0.40 it/sec | ce 3.515 | ppl 33.614[0m
+[[36m07-20 17:25:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 5/14 | 0.46 it/sec | ce 3.746 | ppl 42.367[0m
+[[36m07-20 17:25:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 6/14 | 0.52 it/sec | ce 3.683 | ppl 39.750[0m
+[[36m07-20 17:25:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 7/14 | 0.58 it/sec | ce 3.736 | ppl 41.921[0m
+[[36m07-20 17:25:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 8/14 | 0.62 it/sec | ce 3.485 | ppl 32.635[0m
+[[36m07-20 17:25:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 9/14 | 0.67 it/sec | ce 3.850 | ppl 46.973[0m
+[[36m07-20 17:25:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 10/14 | 0.71 it/sec | ce 3.778 | ppl 43.721[0m
+[[36m07-20 17:25:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 11/14 | 0.76 it/sec | ce 3.638 | ppl 38.000[0m
+[[36m07-20 17:25:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 12/14 | 0.79 it/sec | ce 3.563 | ppl 35.262[0m
+[[36m07-20 17:25:22[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 23 | 13/14 | 0.84 it/sec | ce 3.560 | ppl 35.164[0m
+[[36m07-20 17:25:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 23 | ce=3.654 | ppl=39.139 | duration=18.955[0m
+[[36m07-20 17:25:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.654 (was 3.661)[0m
+[[36m07-20 17:25:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 6c9cd81cb82822b8e47b436b2af809f93f06980b[0m
+[[36m07-20 17:25:23[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:29:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 24 | lr=1.81E-02 | grad_norm=4.390E-01 | grad_scale=505131.323 | ce=3.561 | ppl=35.569 | duration=232.785[0m
+[[36m07-20 17:29:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 1/14 | 0.19 it/sec | ce 3.848 | ppl 47.045[0m
+[[36m07-20 17:29:28[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 2/14 | 0.27 it/sec | ce 3.242 | ppl 25.593[0m
+[[36m07-20 17:29:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 3/14 | 0.34 it/sec | ce 3.632 | ppl 37.802[0m
+[[36m07-20 17:29:29[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 4/14 | 0.41 it/sec | ce 3.509 | ppl 33.428[0m
+[[36m07-20 17:29:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 5/14 | 0.47 it/sec | ce 3.739 | ppl 42.076[0m
+[[36m07-20 17:29:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 6/14 | 0.53 it/sec | ce 3.676 | ppl 39.498[0m
+[[36m07-20 17:29:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 7/14 | 0.59 it/sec | ce 3.729 | ppl 41.626[0m
+[[36m07-20 17:29:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 8/14 | 0.64 it/sec | ce 3.479 | ppl 32.433[0m
+[[36m07-20 17:29:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 9/14 | 0.68 it/sec | ce 3.843 | ppl 46.642[0m
+[[36m07-20 17:29:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 10/14 | 0.73 it/sec | ce 3.772 | ppl 43.451[0m
+[[36m07-20 17:29:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 11/14 | 0.77 it/sec | ce 3.631 | ppl 37.734[0m
+[[36m07-20 17:29:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 12/14 | 0.81 it/sec | ce 3.556 | ppl 35.036[0m
+[[36m07-20 17:29:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 24 | 13/14 | 0.85 it/sec | ce 3.553 | ppl 34.919[0m
+[[36m07-20 17:29:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 24 | ce=3.647 | ppl=38.881 | duration=18.602[0m
+[[36m07-20 17:29:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.647 (was 3.654)[0m
+[[36m07-20 17:29:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: f1a6f889cccb2639ea5e8363f3be939329cb4501[0m
+[[36m07-20 17:29:35[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:33:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 25 | lr=1.42E-02 | grad_norm=4.347E-01 | grad_scale=524288.000 | ce=3.570 | ppl=35.920 | duration=236.191[0m
+[[36m07-20 17:33:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 1/14 | 0.18 it/sec | ce 3.842 | ppl 46.783[0m
+[[36m07-20 17:33:43[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 2/14 | 0.26 it/sec | ce 3.238 | ppl 25.473[0m
+[[36m07-20 17:33:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 3/14 | 0.33 it/sec | ce 3.627 | ppl 37.594[0m
+[[36m07-20 17:33:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 4/14 | 0.40 it/sec | ce 3.504 | ppl 33.264[0m
+[[36m07-20 17:33:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 5/14 | 0.46 it/sec | ce 3.734 | ppl 41.834[0m
+[[36m07-20 17:33:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 6/14 | 0.52 it/sec | ce 3.671 | ppl 39.294[0m
+[[36m07-20 17:33:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 7/14 | 0.57 it/sec | ce 3.723 | ppl 41.378[0m
+[[36m07-20 17:33:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 8/14 | 0.62 it/sec | ce 3.474 | ppl 32.265[0m
+[[36m07-20 17:33:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 9/14 | 0.67 it/sec | ce 3.837 | ppl 46.374[0m
+[[36m07-20 17:33:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 10/14 | 0.71 it/sec | ce 3.767 | ppl 43.233[0m
+[[36m07-20 17:33:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 11/14 | 0.75 it/sec | ce 3.625 | ppl 37.509[0m
+[[36m07-20 17:33:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 12/14 | 0.79 it/sec | ce 3.551 | ppl 34.848[0m
+[[36m07-20 17:33:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 25 | 13/14 | 0.83 it/sec | ce 3.547 | ppl 34.723[0m
+[[36m07-20 17:33:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 25 | ce=3.642 | ppl=38.668 | duration=19.028[0m
+[[36m07-20 17:33:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.642 (was 3.647)[0m
+[[36m07-20 17:33:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 17:34:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 25 | rtf=0.281 | duration=18.413[0m
+[[36m07-20 17:34:09[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8b6ec744d54b7f517191ad5c9b0a1c4c7a2167f3[0m
+[[36m07-20 17:34:09[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_25.th[0m
+[[36m07-20 17:34:09[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:38:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 26 | lr=1.08E-02 | grad_norm=4.225E-01 | grad_scale=524288.000 | ce=3.591 | ppl=36.634 | duration=234.941[0m
+[[36m07-20 17:38:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 1/14 | 0.18 it/sec | ce 3.838 | ppl 46.569[0m
+[[36m07-20 17:38:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 2/14 | 0.26 it/sec | ce 3.234 | ppl 25.378[0m
+[[36m07-20 17:38:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 3/14 | 0.33 it/sec | ce 3.622 | ppl 37.422[0m
+[[36m07-20 17:38:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 4/14 | 0.39 it/sec | ce 3.500 | ppl 33.128[0m
+[[36m07-20 17:38:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 5/14 | 0.45 it/sec | ce 3.729 | ppl 41.639[0m
+[[36m07-20 17:38:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 6/14 | 0.51 it/sec | ce 3.667 | ppl 39.123[0m
+[[36m07-20 17:38:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 7/14 | 0.56 it/sec | ce 3.718 | ppl 41.173[0m
+[[36m07-20 17:38:19[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 8/14 | 0.61 it/sec | ce 3.470 | ppl 32.129[0m
+[[36m07-20 17:38:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 9/14 | 0.66 it/sec | ce 3.832 | ppl 46.153[0m
+[[36m07-20 17:38:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 10/14 | 0.70 it/sec | ce 3.762 | ppl 43.056[0m
+[[36m07-20 17:38:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 11/14 | 0.74 it/sec | ce 3.620 | ppl 37.323[0m
+[[36m07-20 17:38:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 12/14 | 0.78 it/sec | ce 3.547 | ppl 34.700[0m
+[[36m07-20 17:38:21[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 26 | 13/14 | 0.82 it/sec | ce 3.543 | ppl 34.561[0m
+[[36m07-20 17:38:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 26 | ce=3.637 | ppl=38.494 | duration=19.167[0m
+[[36m07-20 17:38:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.637 (was 3.642)[0m
+[[36m07-20 17:38:23[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 8e5326773a6c4140e259b13b20b44b92d480f260[0m
+[[36m07-20 17:38:23[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:42:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 27 | lr=7.75E-03 | grad_norm=4.144E-01 | grad_scale=524288.000 | ce=3.578 | ppl=36.257 | duration=235.032[0m
+[[36m07-20 17:42:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 1/14 | 0.18 it/sec | ce 3.834 | ppl 46.391[0m
+[[36m07-20 17:42:30[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 2/14 | 0.26 it/sec | ce 3.231 | ppl 25.294[0m
+[[36m07-20 17:42:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 3/14 | 0.33 it/sec | ce 3.618 | ppl 37.279[0m
+[[36m07-20 17:42:31[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 4/14 | 0.40 it/sec | ce 3.497 | ppl 33.013[0m
+[[36m07-20 17:42:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 5/14 | 0.46 it/sec | ce 3.725 | ppl 41.473[0m
+[[36m07-20 17:42:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 6/14 | 0.52 it/sec | ce 3.663 | ppl 38.975[0m
+[[36m07-20 17:42:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 7/14 | 0.57 it/sec | ce 3.714 | ppl 41.002[0m
+[[36m07-20 17:42:33[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 8/14 | 0.62 it/sec | ce 3.466 | ppl 32.015[0m
+[[36m07-20 17:42:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 9/14 | 0.66 it/sec | ce 3.828 | ppl 45.961[0m
+[[36m07-20 17:42:34[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 10/14 | 0.71 it/sec | ce 3.759 | ppl 42.907[0m
+[[36m07-20 17:42:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 11/14 | 0.75 it/sec | ce 3.616 | ppl 37.171[0m
+[[36m07-20 17:42:35[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 12/14 | 0.79 it/sec | ce 3.543 | ppl 34.577[0m
+[[36m07-20 17:42:36[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 27 | 13/14 | 0.83 it/sec | ce 3.539 | ppl 34.423[0m
+[[36m07-20 17:42:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 27 | ce=3.633 | ppl=38.348 | duration=19.102[0m
+[[36m07-20 17:42:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.633 (was 3.637)[0m
+[[36m07-20 17:42:37[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 81fb88c69e21bf229c5bc21213f06528a83a6efa[0m
+[[36m07-20 17:42:37[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:46:32[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 28 | lr=5.19E-03 | grad_norm=4.024E-01 | grad_scale=524288.000 | ce=3.582 | ppl=36.408 | duration=235.157[0m
+[[36m07-20 17:46:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 1/14 | 0.18 it/sec | ce 3.831 | ppl 46.248[0m
+[[36m07-20 17:46:44[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 2/14 | 0.26 it/sec | ce 3.228 | ppl 25.228[0m
+[[36m07-20 17:46:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 3/14 | 0.34 it/sec | ce 3.615 | ppl 37.165[0m
+[[36m07-20 17:46:45[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 4/14 | 0.40 it/sec | ce 3.494 | ppl 32.919[0m
+[[36m07-20 17:46:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 5/14 | 0.47 it/sec | ce 3.722 | ppl 41.342[0m
+[[36m07-20 17:46:46[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 6/14 | 0.52 it/sec | ce 3.660 | ppl 38.853[0m
+[[36m07-20 17:46:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 7/14 | 0.58 it/sec | ce 3.710 | ppl 40.864[0m
+[[36m07-20 17:46:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 8/14 | 0.63 it/sec | ce 3.463 | ppl 31.922[0m
+[[36m07-20 17:46:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 9/14 | 0.67 it/sec | ce 3.824 | ppl 45.808[0m
+[[36m07-20 17:46:48[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 10/14 | 0.72 it/sec | ce 3.756 | ppl 42.785[0m
+[[36m07-20 17:46:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 11/14 | 0.76 it/sec | ce 3.612 | ppl 37.052[0m
+[[36m07-20 17:46:49[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 12/14 | 0.80 it/sec | ce 3.540 | ppl 34.478[0m
+[[36m07-20 17:46:50[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 28 | 13/14 | 0.84 it/sec | ce 3.536 | ppl 34.319[0m
+[[36m07-20 17:46:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 28 | ce=3.630 | ppl=38.231 | duration=18.876[0m
+[[36m07-20 17:46:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.630 (was 3.633)[0m
+[[36m07-20 17:46:51[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: c0c2b5f82a8aa284b5fa463e138c81453ba5ecf7[0m
+[[36m07-20 17:46:51[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:50:47[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 29 | lr=3.12E-03 | grad_norm=3.903E-01 | grad_scale=524288.000 | ce=3.571 | ppl=35.896 | duration=235.605[0m
+[[36m07-20 17:50:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 1/14 | 0.18 it/sec | ce 3.828 | ppl 46.134[0m
+[[36m07-20 17:50:59[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 2/14 | 0.25 it/sec | ce 3.226 | ppl 25.176[0m
+[[36m07-20 17:51:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 3/14 | 0.33 it/sec | ce 3.613 | ppl 37.073[0m
+[[36m07-20 17:51:00[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 4/14 | 0.39 it/sec | ce 3.492 | ppl 32.842[0m
+[[36m07-20 17:51:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 5/14 | 0.45 it/sec | ce 3.719 | ppl 41.237[0m
+[[36m07-20 17:51:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 6/14 | 0.51 it/sec | ce 3.657 | ppl 38.762[0m
+[[36m07-20 17:51:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 7/14 | 0.56 it/sec | ce 3.708 | ppl 40.760[0m
+[[36m07-20 17:51:02[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 8/14 | 0.61 it/sec | ce 3.461 | ppl 31.848[0m
+[[36m07-20 17:51:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 9/14 | 0.66 it/sec | ce 3.822 | ppl 45.688[0m
+[[36m07-20 17:51:03[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 10/14 | 0.70 it/sec | ce 3.754 | ppl 42.685[0m
+[[36m07-20 17:51:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 11/14 | 0.74 it/sec | ce 3.610 | ppl 36.951[0m
+[[36m07-20 17:51:04[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 12/14 | 0.78 it/sec | ce 3.538 | ppl 34.399[0m
+[[36m07-20 17:51:05[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 29 | 13/14 | 0.82 it/sec | ce 3.533 | ppl 34.236[0m
+[[36m07-20 17:51:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 29 | ce=3.628 | ppl=38.138 | duration=19.252[0m
+[[36m07-20 17:51:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.628 (was 3.630)[0m
+[[36m07-20 17:51:06[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: 1a5db0d5bd1995cd5cc8747112ef58026b04f342[0m
+[[36m07-20 17:51:06[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m
+[[36m07-20 17:55:01[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mTrain Summary | Epoch 30 | lr=1.56E-03 | grad_norm=3.830E-01 | grad_scale=524288.000 | ce=3.585 | ppl=36.520 | duration=234.658[0m
+[[36m07-20 17:55:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 1/14 | 0.18 it/sec | ce 3.826 | ppl 46.042[0m
+[[36m07-20 17:55:13[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 2/14 | 0.26 it/sec | ce 3.224 | ppl 25.131[0m
+[[36m07-20 17:55:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 3/14 | 0.34 it/sec | ce 3.611 | ppl 37.002[0m
+[[36m07-20 17:55:14[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 4/14 | 0.40 it/sec | ce 3.490 | ppl 32.778[0m
+[[36m07-20 17:55:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 5/14 | 0.46 it/sec | ce 3.717 | ppl 41.151[0m
+[[36m07-20 17:55:15[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 6/14 | 0.52 it/sec | ce 3.655 | ppl 38.685[0m
+[[36m07-20 17:55:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 7/14 | 0.58 it/sec | ce 3.706 | ppl 40.672[0m
+[[36m07-20 17:55:16[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 8/14 | 0.63 it/sec | ce 3.459 | ppl 31.785[0m
+[[36m07-20 17:55:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 9/14 | 0.67 it/sec | ce 3.820 | ppl 45.595[0m
+[[36m07-20 17:55:17[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 10/14 | 0.72 it/sec | ce 3.752 | ppl 42.603[0m
+[[36m07-20 17:55:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 11/14 | 0.76 it/sec | ce 3.607 | ppl 36.871[0m
+[[36m07-20 17:55:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 12/14 | 0.80 it/sec | ce 3.536 | ppl 34.335[0m
+[[36m07-20 17:55:18[0m][[34mflashy.solver[0m][[32mINFO[0m] - Valid | Epoch 30 | 13/14 | 0.84 it/sec | ce 3.531 | ppl 34.170[0m
+[[36m07-20 17:55:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mValid Summary | Epoch 30 | ce=3.626 | ppl=38.062 | duration=18.873[0m
+[[36m07-20 17:55:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - New best state with ce=3.626 (was 3.628)[0m
+[[36m07-20 17:55:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mEvaluate Summary | Epoch 30 | duration=0.000[0m
+[[36m07-20 17:55:20[0m][[34mflashy.solver[0m][[32mINFO[0m] - Generating samples in C:\tmp\audiocraft_mehra\xps\020819d8\samples[0m
+[[36m07-20 17:55:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - [1mGenerate Summary | Epoch 30 | rtf=0.270 | duration=18.408[0m
+[[36m07-20 17:55:38[0m][[34mflashy.solver[0m][[32mINFO[0m] - Model hash: e38781413ca4588c770f3efc48688e7ed9991bf1[0m
+[[36m07-20 17:55:38[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint_30.th[0m
+[[36m07-20 17:55:38[0m][[34maudiocraft.utils.checkpoint[0m][[32mINFO[0m] - Checkpoint saved to C:\tmp\audiocraft_mehra\xps\020819d8\checkpoint.th[0m

@@ -1,0 +1,27 @@
+{
+  "id": "3e75c2c66842521dda1f5c888eade781853c4e7c_prompted_description=a-persian-dastgah-track-of-mahour",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\5\\3e75c2c66842521dda1f5c888eade781853c4e7c_prompted_description=a-persian-dastgah-track-of-mahour.wav",
+  "epoch": 5,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Mahour"
+  },
+  "prompt": {
+    "id": "1c741d01999adfef23e3ac7a68da493a6ab0077e",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\5\\prompt\\1c741d01999adfef23e3ac7a68da493a6ab0077e.wav",
+    "duration": 5.0
+  },
+  "reference": {
+    "id": "d50614156ca66563853701ec6995f961695f1bd8",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\d50614156ca66563853701ec6995f961695f1bd8.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}

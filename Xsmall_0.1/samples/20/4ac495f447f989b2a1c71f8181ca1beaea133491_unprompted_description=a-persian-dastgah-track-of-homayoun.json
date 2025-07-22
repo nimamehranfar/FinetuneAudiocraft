@@ -1,0 +1,23 @@
+{
+  "id": "4ac495f447f989b2a1c71f8181ca1beaea133491_unprompted_description=a-persian-dastgah-track-of-homayoun",
+  "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\20\\4ac495f447f989b2a1c71f8181ca1beaea133491_unprompted_description=a-persian-dastgah-track-of-homayoun.wav",
+  "epoch": 20,
+  "duration": 10.0,
+  "conditioning": {
+    "description": "a persian dastgah track of Homayoun"
+  },
+  "prompt": null,
+  "reference": {
+    "id": "41a4b483b83279b93042841c687aad6e30b0ae41",
+    "path": "C:\\tmp\\audiocraft_mehra\\xps\\020819d8\\samples\\reference\\41a4b483b83279b93042841c687aad6e30b0ae41.wav",
+    "duration": 8.0
+  },
+  "generation_args": {
+    "classifier_free_guidance_training_dropout": 0.3,
+    "classifier_free_guidance_inference_coef": 3.0,
+    "use_sampling": true,
+    "temp": 1.0,
+    "top_k": 250,
+    "top_p": 0.0
+  }
+}
